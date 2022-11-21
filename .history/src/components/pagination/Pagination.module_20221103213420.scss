@@ -1,0 +1,41 @@
+.pagination__container {
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid orangered;
+    display: inline-block;
+    align-items: center;
+    justify-self: start;
+    text-align: center;
+    width: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    a {
+      padding: 12px 5px;
+    }
+
+    &:hover {
+      background-color: orangered;
+      a {
+        color: #fff;
+      }
+    }
+  }
+  :global {
+    .selected {
+      li {
+        
+      }
+    }
+  }
+}

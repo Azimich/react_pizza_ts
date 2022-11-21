@@ -1,0 +1,49 @@
+.pagination__container {
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid orangered;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    &:first-child {
+      position: relative;
+      &:after {
+        content: "";
+        background-image: url("../../assets/images/arrow.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 8px;
+        top: 10px;
+      }
+    }
+
+    &:hover {
+      background-color: orangered;
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .pagination {
+    
+  }
+}

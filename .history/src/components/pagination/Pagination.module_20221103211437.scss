@@ -1,0 +1,27 @@
+.pagination__container {
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+   
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+
+    a {
+      padding: 10px;
+      border-radius: 30px;
+      border: 1px solid orangered;
+    }
+
+    &:hover {
+      background-color: orangered;
+    }
+  }
+
+  .pagination {
+    
+  }
+}

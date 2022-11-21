@@ -1,0 +1,19 @@
+.search {
+  position: relative;
+  input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px 20px 12px 40px;
+    max-width: 300px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    opacity: .5;
+    position: absolute;
+    left: 10px;
+    top: 13px;
+  }
+}

@@ -1,0 +1,35 @@
+.pagination__container {
+  li {
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid orangered;
+    display: inline-block;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    &:first-child {
+      &:after {
+        content: "";
+        background-image: url("../../assets/");
+      }
+    }
+
+    &:hover {
+      background-color: orangered;
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .pagination {
+    
+  }
+}
