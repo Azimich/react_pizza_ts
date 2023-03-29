@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { useDispatch } from 'react-redux';
-import { ISort, setSort, sortPropertyEnum } from '../redux/slices/fiterSlice';
+import { useSelector, useDispatch } from 'react-redux';
+import { ISort, selectSort, setSort, sortPropertyEnum } from '../redux/slices/fiterSlice';
 
 interface ISortList {
   name: string;
@@ -27,6 +27,7 @@ export const sortList: ISortList[] = [
 const SortPopup: FC<ISortProps> = React.memo(({ value }) => {
   const dispatch = useDispatch();
   const sortRef = React.useRef<HTMLDivElement>(null);
+  // const sort = useSelector(selectSort);
   const [open, setOpen] = React.useState(false);
   const onClickListItem = (obj: ISortList) => {
     dispatch(setSort(obj));

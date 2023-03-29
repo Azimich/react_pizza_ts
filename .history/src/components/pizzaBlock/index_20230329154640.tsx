@@ -29,7 +29,9 @@ const PizzaBlock: FC<IPizzaBlockProps> = memo(({ id, title, price, imageUrl, siz
       count: 0,
     };
     dispatch(addItem(item));
-  }, [activeType, activeSize, dispatch, id, title, price, imageUrl, sizes]);
+  }, [
+    activeType,
+activeSize,]);
 
   return (
     <div className="pizza__block__wrapper">

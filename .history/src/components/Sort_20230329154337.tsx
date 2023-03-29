@@ -27,6 +27,7 @@ export const sortList: ISortList[] = [
 const SortPopup: FC<ISortProps> = React.memo(({ value }) => {
   const dispatch = useDispatch();
   const sortRef = React.useRef<HTMLDivElement>(null);
+  // const sort = useSelector(selectSort);
   const [open, setOpen] = React.useState(false);
   const onClickListItem = (obj: ISortList) => {
     dispatch(setSort(obj));

@@ -17,7 +17,7 @@ const Home: FC = () => {
     (id: number) => {
       dispatch(setCategoryId(id));
     },
-    [],
+    [dispatch],
   );
 
 
@@ -41,7 +41,7 @@ const Home: FC = () => {
 
   React.useEffect(() => {
     getPizzas();
-  }, [categoryId, sort.sortProperty, searchValue, currentPage,]);
+  }, [categoryId, sort.sortProperty, searchValue, currentPage]);
 
   const pizzas = items.map((obj: any) => <PizzaBlock key={obj.id} {...obj} />);
   const skeletons = [...new Array(20)].map((_, index) => <Skeleton key={index}/>)
