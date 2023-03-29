@@ -18,7 +18,7 @@ const Home: FC = () => {
     (id: number) => {
       dispatch(setCategoryId(id));
     },
-    [dispatch],
+    [],
   );
 
 

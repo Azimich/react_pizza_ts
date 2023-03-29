@@ -13,12 +13,11 @@ const Home: FC = () => {
   const dispatch = useAppDispatch();
   const { categoryId, sort, currentPage, searchValue } = useSelector(selectFilter);
   const { items, status } = useSelector(selectPizzaData);
-  
+
   const onChangeCategory = React.useCallback(
     (id: number) => {
       dispatch(setCategoryId(id));
-    },
-    [dispatch],
+    }
   );
 
 
