@@ -1,0 +1,1 @@
+export const typeNames = ['токное', 'традиционное'];
